@@ -77,7 +77,7 @@ class DisplayManager():
 
     def parse(self, output: List[str]):
         try:
-            matches = findall("\\s{2}((?:DP|HDMI|VGA)-[0-9])", "\n".join(output))
+            matches = findall("\\s{2}((?:eDP|DP|HDMI|VGA)-[0-9])", "\n".join(output))
             return matches
 
         except Exception as e:
